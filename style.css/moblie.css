@@ -1,0 +1,130 @@
+  @media screen and (max-width: 900px) {
+    
+
+    :root{
+        --blackcolor :black;
+        --color:white;
+        --light-color: white;
+         --light-text: black;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color);
+        box-shadow: 4px white;
+        display: grid;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-columns: 100vw;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;
+    }
+    header{
+        background-color: var(--blackcolor);
+        width: 100vw;
+        text-align: center;
+        margin:0px;
+        border: 0px;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header>h1{
+        color: aqua;
+        font-size: 40px;
+        text-transform: capitalize;
+
+    }
+    header>h1>i{
+        font-weight: 100;
+
+    }
+    main{
+        background-color: white;
+        width: 100vw;
+        height: 80vh;
+        margin: 0px;
+        border: 0px;
+        display: grid;
+        /* flex-direction: column;
+         */
+         grid-template-rows: 10vh 70vh;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+    footer{
+        text-align: center;
+        background-color:var(--blackcolor);
+        color: var(--color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    main .input{
+        width: 80vw;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+    }
+    input:focus{
+        outline: none;
+    }
+    main .input > input[type="text"]{
+        width: 100%;
+        border: 2px solid white;
+        text-align: end;
+        height: 50px;
+        font-size: 45px;   
+    }
+    main .buttonGroup{
+        height: 100%;
+        box-sizing: border-box;
+        display: grid;
+        padding: 7px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+        row-gap: 10px;
+        align-items: center;
+        
+        width:84vw ;
+    }
+    main .buttonGroup .bt-row{
+        box-sizing: border-box;
+        height: 90%;
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4px ;
+        }
+      main .buttonGroup .bt-row .btn{
+        width: 80%;
+        height: 80%;
+        border:1px solid white;
+        background-color:#593fc7;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+
+        border-radius: 30%;
+      }
+      #zero{
+        grid-column: 1/span 2;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+      #dots{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      
+        
+    }
